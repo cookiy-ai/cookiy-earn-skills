@@ -1,0 +1,25 @@
+{
+  "name": "cookiy-earn-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development and release workspace for the cookiy-earn Agent Skill",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.18.2",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:check": "node scripts/verify-skill-dist.mjs",
+    "smoke:install": "node scripts/smoke-install.mjs",
+    "test": "node --import tsx --test test/**/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "verify": "pnpm typecheck && pnpm test && pnpm build:check"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

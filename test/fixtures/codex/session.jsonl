@@ -1,0 +1,6 @@
+{"timestamp":"2026-07-01T10:00:00Z","type":"session_meta","payload":{"id":"codex-raw-session-123456","cwd":"/Users/alice/secret-project"}}
+{"timestamp":"2026-07-01T10:00:01Z","type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Fix the failing checkout test. Email me at alice@example.com and use API_KEY=super-secret-value."}]}}
+{"timestamp":"2026-07-01T10:00:02Z","type":"response_item","payload":{"type":"function_call","name":"exec_command","arguments":"{}"}}
+{"timestamp":"2026-07-01T10:00:03Z","type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"I found the race and added a deterministic test."}]}}
+{"timestamp":"2026-07-01T10:00:04Z","type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":100,"output_tokens":40,"total_tokens":140}}}}
+this is malformed

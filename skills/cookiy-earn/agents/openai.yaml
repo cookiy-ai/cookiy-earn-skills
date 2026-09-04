@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cookiy Earn"
+  short_description: "Create a redacted coding summary with examples"
+  default_prompt: "Use $cookiy-earn to create a Cookiy Data Summary with representative samples from my local Codex or Claude Code history."
